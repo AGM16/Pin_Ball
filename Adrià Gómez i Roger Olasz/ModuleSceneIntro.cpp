@@ -32,16 +32,16 @@ bool ModuleSceneIntro::Start()
 	App->renderer->camera.x = App->renderer->camera.y = 0;
 
 	//Load Textures----------------------------------------------------------
-	Green_Light = App->textures->Load("pinball/Light.png");
-	Green_Light_Middle = App->textures->Load("pinball/Light_2.png");
-	Yellow_Light_texture = App->textures->Load("pinball/Light_3.png");
-	Light_Circle_Texture = App->textures->Load("pinball/Score_Point_Down.png");
-	Score_Circle_Texture = App->textures->Load("pinball/Score_Point.png");
-	Spring_Texture = App->textures->Load("pinball/Tuberia.png");
-	Yellow_Box_Entrance = App->textures->Load("pinball/Box_Restitution.png");
-	bonus_fx = App->audio->LoadFx("pinball/bonus.wav");
-	Img = App->textures->Load("pinball/Tablero_Pinball.png");
-	Gear_A = App->textures->Load("pinball/wheelA.png");
+	Green_Light = App->textures->Load("Game/pinball/Light.png");
+	Green_Light_Middle = App->textures->Load("Game/pinball/Light_2.png");
+	Yellow_Light_texture = App->textures->Load("Game/pinball/Light_3.png");
+	Light_Circle_Texture = App->textures->Load("Game/pinball/Score_Point_Down.png");
+	Score_Circle_Texture = App->textures->Load("Game/pinball/Score_Point.png");
+	Spring_Texture = App->textures->Load("Game/pinball/Tuberia.png");
+	Yellow_Box_Entrance = App->textures->Load("Game/pinball/Box_Restitution.png");
+	bonus_fx = App->audio->LoadFx("Game/pinball/bonus.wav");
+	Img = App->textures->Load("Game/pinball/Tablero_Pinball.png");
+	Gear_A = App->textures->Load("Game/pinball/wheelA.png");
 
 	//Creation of the walls of our board----------------------------------------
 	Board.add(App->physics->CreateBoard(0, 0, Rectangle1, 12));

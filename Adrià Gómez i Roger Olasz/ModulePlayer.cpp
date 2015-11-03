@@ -19,11 +19,11 @@ bool ModulePlayer::Start()
 {
 	LOG("Loading player");
 
-	Flipper_LU = App->textures->Load("pinball/Flipper.png");
-	Flipper_LD = App->textures->Load("pinball/Flipper2.png");
-	Flipper_RD = App->textures->Load("pinball/Flipper3.png");
-	Flipper_RU = App->textures->Load("pinball/Flipper4.png");
-	Ball_Texture = App->textures->Load("pinball/ball.png");
+	Flipper_LU = App->textures->Load("Game/pinball/Flipper.png");
+	Flipper_LD = App->textures->Load("Game/pinball/Flipper2.png");
+	Flipper_RD = App->textures->Load("Game/pinball/Flipper3.png");
+	Flipper_RU = App->textures->Load("Game/pinball/Flipper4.png");
+	Ball_Texture = App->textures->Load("Game/pinball/ball.png");
 
 	int Flipper[14] = {
 		5, 1,
